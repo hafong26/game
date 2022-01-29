@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background: #eb2f06;
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding-top: 150px;
+}
+
+header div {
+    position: relative;
+    width: max-content;
+    margin: auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+header .plate {
+    width: 100%;
+}
+
+header .bowl {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+.plate:active,
+.bowl:active {
+    cursor: pointer;
+}
+
+.bowl.active {
+    top: -50px;
+}
+
+
+/* Coins */
+
+.my-coins {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coin {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    user-select: none;
+    font-weight: bold;
+    border: 10px solid var(--bg);
+    color: var(--bg);
+    background: linear-gradient(#fff8, #fff8), var(--bg);
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+/* Money */
+
+.my-money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.my-money div {
+    margin: auto;
+    width: max-content;
+    padding: 3px 15px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    border: 3px solid yellow;
+    border-radius: 15px;
+    background: red;
+}
+
+
+/* Paper */
+
+.paper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.paper img {
+    max-width: 420px;
+    width: 100%;
+}
